@@ -1,30 +1,33 @@
-# InfoBERT: Improving Robustness of Language Models from An Information Theoretic Perspective 
+# README
 
-This is the official code base for our ICLR 2021 paper:
+This repository contains two main folders, each dedicated to different aspects of the project:
 
-["InfoBERT: Improving Robustness of Language Models from An Information Theoretic Perspective".](https://openreview.net/forum?id=hpH98mK5Puk)
+1. **Baseline**: Implements a standard model to achieve baseline results.
+2. **InfoBERT**: Implements the InfoBERT regularizer for enhanced results.
 
-Boxin Wang, Shuohang Wang, Yu Cheng, Zhe Gan, Ruoxi Jia, Bo Li, Jingjing Liu
+## Folder Structure
 
-## Usage
-### Prepare your environment 
+### Baseline
+The `baseline` folder contains:
+- **Model Implementation**: Core model scripts for obtaining baseline results.
+- **Scripts**: Python files that, when executed, produce baseline performance metrics.
 
-Download required packages
-```
-pip install -r requirements.txt
-```
-### ANLI and TextFooler
-To run ANLI and TextFooler experiments, refer to [README](https://github.com/AI-secure/InfoBERT/tree/master/ANLI) in the `ANLI` directory.
+### InfoBERT
+The `inforbert` folder contains:
+- **InfoBERT Implementation**: Scripts to apply the InfoBERT regularizer to the model.
+- **Scripts**: Python files to run and evaluate the model with InfoBERT regularization.
 
-### SQuAD
-To run SQuAD experiments, refer to [README](https://github.com/AI-secure/InfoBERT/tree/master/SQuAD) in the `SQuAD` directory.
+## How to Run
 
-## Citation
-```
-@inproceedings{
-wang2021infobert,
-title={InfoBERT: Improving Robustness of Language Models from An Information Theoretic Perspective},
-author={Wang, Boxin and Wang, Shuohang and Cheng, Yu and Gan, Zhe and Jia, Ruoxi and Li, Bo and Liu, Jingjing},
-booktitle={International Conference on Learning Representations},
-year={2021}}
-```
+Each folder includes a `scripts` directory with Python files to generate the desired results.
+
+### Note
+
+The links to the final trained models have been provided in the report.
+
+### Steps to Run:
+1. Navigate to the respective folder (`baseline` or `inforbert`).
+2. Locate the `scripts` folder within it.
+3. Run the relevant Python file using:
+   bash
+   python <script_name>.py``
